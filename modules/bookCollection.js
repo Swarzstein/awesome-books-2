@@ -12,14 +12,14 @@ class BookCollection {
     this.bookInfo = storage === null ? [] : storage;
   }
 
-  addBook(id, bookTitle, authorName) {
+  addBook = (id, bookTitle, authorName) => {
     const newBook = new Book(id, bookTitle, authorName);
     this.bookInfo.push(newBook);
     setLocalStorage(this.bookInfo);
     this.displayBookCollection();
   }
 
-  displayBookCollection() {
+  displayBookCollection = () => {
     if (this.bookInfo.length <= 0) {
       allBooks.innerHTML = '<h3 class="no-title">No book available.<br/> Please add a new book.</h3>';
     } else {
