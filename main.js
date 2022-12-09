@@ -1,8 +1,13 @@
 import BookCollection from './modules/bookCollection.js';
-
+import { DateTime } from './modules/luxon.js';
+const ct = document.getElementById('current-time');
 const submitBtn = document.querySelector('#submitBtn');
 const bookTitle = document.querySelector('#bookTitle');
 const authorName = document.querySelector('#authorName');
+
+setInterval(() => {
+  ct.innerHTML = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+}, 1000);
 
 const bookCollection = new BookCollection();
 

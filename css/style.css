@@ -54,7 +54,7 @@
 
 body {
   font-family: var(--ff-primary);
-  background: var(--light-background-color);
+  background: var(--white-background);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -273,7 +273,7 @@ a {
 .form-container h1,
 .form-container {
   padding: 8px 24px;
-  margin: 42px 0;
+  margin: 20px 0;
 }
 
 .book-form .input-field {
@@ -406,7 +406,7 @@ input::placeholder {
 }
 
 #current-time {
-  margin: 120px 12px 0 12px;
+  margin: 80px 12px 0 12px;
   text-align: right;
   padding: 0 1.5rem;
   align-self: flex-end;
@@ -431,6 +431,7 @@ input::placeholder {
 
 .contact-container ul {
   margin-top: 16px;
+  padding-left: 10%;
 }
 
 .contact-container li {
