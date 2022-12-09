@@ -1,5 +1,6 @@
 import BookCollection from './modules/bookCollection.js';
 import { DateTime } from './modules/luxon.js';
+
 const ct = document.getElementById('current-time');
 const submitBtn = document.querySelector('#submitBtn');
 const bookTitle = document.querySelector('#bookTitle');
@@ -12,7 +13,6 @@ setInterval(() => {
 const bookCollection = new BookCollection();
 
 const addBook = (e) => {
-  console.log('hola')
   e.preventDefault();
 
   let temp = -1;
